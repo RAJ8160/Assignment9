@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductivityDashBoeard.html</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <section id="dashboard">
+            <video class="bg-video" autoplay muted loop playsinline>
+                <source src="morning.mp4" type="video/mp4">
+            </video>
+            <nav>
+                <h1>Product Dashboard</h1>
+                <div class="links">
+                    <p><a><i class="ri-github-fill"></i></a></p>
+                    <a><p><i class="ri-sun-fill"></i></p></a>
+                </div>
+            </nav>
+            <section class="main-content">
+                <div class="left">
+                  <div class="weather-card-left">
+                    <div class="weather-card-left-head">
+                    <p><span id="date">4</span>,<span id="month">July</span> <span id="year">2026</span></p>
+                     <h1><span id="day">SaturDay</span><span id="hour">12</span>:<span id="minute">12</span>:<span id="sec">12</span></h1>
+                     <h1 id="time-stamp1">PM</h1>
+                    </div>
+                    <h3>Rajkot(GJ)</h3>
+                  </div>
+                  <div class="weather-card-right">
+                    <div class="weather-card-right-head">
+                    <h2 id="avgtemp">29.3 C</h2>
+                    <h3>Patchy Rain</h3>
+                    <h3>nearby</h3>
+                    </div>
+                    <div class="weather-card-right-content">
+                        <h3>MinTemp:<span id="minTemp"></span></h3>
+                        <h3>MaxTemp:<span id="maxTemp"></span></h3>
+                        <h3>sunrise:<span id="sunRise"></span></h3>
+                        <h3>sunset:<span id="sunSet"></span></h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="mid">
+
+                </div>
+                <div class="right">
+                    <a id="pt"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKpMCADtBuO41WIeTWEWL2pyptMhVgLHvFj8faY2I0zwK92xFWsc7tMxE&s=10"
+                            alt="">
+                        <video width="140" height="140" src="Daily-plan.mp4" autoplay muted loop playsinline>
+                        </video>
+                    </a>
+
+                    <a id="pod"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUAer-EpFkVf0bGZwjX8Z8HrfFME963PujUqGt0x_Mrg&s=10"
+                            alt="">
+                        <video width="140" height="140" src="plan-task.mp4" autoplay muted loop playsinline></video>
+                    </a>
+
+                    <a id="ts"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu3U6-7BIz0Mm40YgqZR__mQVcbJ6vZa-HEiQIg59MQQ&s=10"
+                            alt="">
+                        <video width="140" height="140" src="timer.mp4" autoplay muted loop playsinline></video>
+
+                    </a>
+                    <a id="dg"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa8GCk9APSg3knLDeqXiOUIYcA4gl2ejpM7T7-q3AdbA&s=10"
+                            alt="">
+                        <video width="140" height="140" src="goal.mp4" autoplay muted loop playsinline></video>
+                    </a>
+                    <a id="sv"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdWdXYbkUYzFhzfCo3EQtEfB39oD2cYjzhf0w9pDPgYw&s=10"
+                            alt="">
+                        <video width="140" height="140" src="mitivation.mp4" autoplay muted loop playsinline></video>
+                    </a>
+                </div>
+            </section>
+        </section>
+        <section class="personal-tasks">
+            <div class="nav">
+                <h1>Your Personalized Task List</h1>
+                <button class="close"><i class="ri-close-large-line"></i></button>
+            </div>
+            <div class="personal-tasks-main">
+                <form id="personal-tasks-form">
+                    <input type="text" name="title" placeholder="Enter Title Here.">
+                    <span class="validation">This is mendetory if you want to add task...</span>
+                    <textarea name="description" placeholder="Enter data here.." rows="8"></textarea>
+                    <span class="validation">This is mendetory if you want to add task...</span>
+
+                    <label class="checkbox" style="color: black !important">
+                        <input type="checkbox" id="check">Mark as Important
+                    </label>
+                    <button class="add-btn" id="add-btn">Add Tasks</button>
+                </form>
+                <section class="all-personal-tasks">
+                    <h1>Daily Tasks</h1>
+                    <div class="tasks">
+
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="plan-of-day">
+            <div class="nav">
+                <h1>Plan Your Day Tobe More Productive</h1>
+                <button class="close"><i class="ri-close-large-line"></i></button>
+            </div>
+            <div class="plan-day-main">
+                <div class="day1">
+                    <!-- <h3><input type="date" id="day1"></h3> -->
+                    <div class="time-slotes" id="time-slotes1">
+
+                    </div>
+                </div>
+                <div class="day2">
+                    <!-- <h3><input type="date" id="day2"></h3> -->
+                    <div class="time-slotes" id="time-slotes2">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="timer-section">
+            <div class="nav">
+                <h1>Study With ME!</h1>
+                <button class="close"><i class="ri-close-large-line"></i></button>
+            </div>
+            <div class="study-with-me">
+                <div class="container">
+                    <h2>work session</h2>
+                    <h2 id="timer" class="timer"></h2>
+                    <div class="controls">
+                        <button id="start">Start</button>
+                        <button id="pause">Pause</button>
+                        <button id="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="daily-goals">
+            <div class="nav">
+                <h1>Daily Goals!</h1>
+                <button class="close"><i class="ri-close-large-line"></i></button>
+            </div>
+            <div id='daily-goal-main'>
+                <form id="daily-goal-form">
+                    <input type="text" name="title" placeholder="Enter Title Here.">
+                    <span class="validation">This is mendetory if you want to add goal...</span>
+                    <textarea name="description" placeholder="Enter data here.." rows="8"></textarea>
+                    <span class="validation">This is mendetory if you want to add goal...</span>
+
+                    <button class="add-btn" id="add-goal-btn">Add Goal</button>
+                </form>
+                <section class="all-goals">
+                    <h1>Daily Goals</h1>
+                    <div class="goals">
+
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="suvichar">
+            <div class="nav">
+                <h1>Today Motivation!</h1>
+                <button class="close"><i class="ri-close-large-line"></i></button>
+            </div>
+
+            <div class="motivation-for-today">
+                <h2 id="golden-word"></h2>
+                <button class="change-btn">Change Motivation From Here.</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
