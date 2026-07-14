@@ -42,6 +42,7 @@ const sv = right.querySelector('#sv')
 const img = right.querySelector('img')
 const bg_video = document.querySelector('.bg-video')
 const source = bg_video.querySelector('source');
+const bg_img = document.querySelector('.bg-img'); 
 
 const weather_card_left_head = document.querySelector('.weather-card-left-head');
 
@@ -97,24 +98,28 @@ function setBackground() {
 
      const hours = dateTime.getHours();
      if (hours < 12) {
+          bg_img.src = "morning2.webp"
           source.src = "morning.mp4"
           nav.classList.remove('white')
           p.forEach((element) => {
                element.classList.remove('white-i');
           });
      } else if (hours <= 17) {
+          bg_img.src = "afternoon2.avif"
           source.src = "noon.mp4"
           nav.classList.remove('white')
           p.forEach((element) => {
                element.classList.remove('white-i');
           });
      } else if (hours < 19) {
+          bg_img.src = "evening2.avif"
           source.src = 'evening.mp4'
           nav.classList.remove('white')
           p.forEach((element) => {
                element.classList.remove('white-i');
           });
      } else {
+          bg_img.src = "night.avif"
           source.src = 'ninght.mp4'
 
           nav.classList.add('white')
